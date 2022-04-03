@@ -14,6 +14,12 @@ class Home extends Component
         $this->name = $name;
     }
 
+    // mount() - Is a hook method that is executed befor rendering the view --PASS OPTIONAL PARAMS
+    // public function mount($name = null)
+    // {
+    //     $this->name = $name;
+    // }
+
     public function render()
     {
         return view('livewire.home');
