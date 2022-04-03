@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\Form;
 use App\Http\Livewire\Home;
 use App\Http\Livewire\Post;
 use App\Http\Livewire\User;
@@ -29,3 +30,7 @@ Route::get('home/{name}', Home::class);
 
 // Pass optional parameters
 // Route::get('home/{name?}', Home::class);
+
+
+// PROPERTY BINDING
+Route::get('form', Form::class);
