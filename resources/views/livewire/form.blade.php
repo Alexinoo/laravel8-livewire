@@ -1,6 +1,6 @@
 <div>
     Name: 
-   <input type="text" name="name" id="name"  wire:model = "name" />
+   <input type="text" name="name" id="name"  wire:model.debounce.1000ms = "name" />
    <br><br><br>
    Message:
    <textarea name="message" id="message" rows="2" wire:model = "message"></textarea>
