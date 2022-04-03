@@ -7,6 +7,7 @@ use App\Http\Livewire\Home;
 use App\Http\Livewire\Post;
 use App\Http\Livewire\Product;
 use App\Http\Livewire\User;
+use App\Http\Livewire\Users;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -49,3 +50,7 @@ Route::get('product', Product::class);
 
 //  LIVEWIRE FORM VALIDATION
 Route::get('contact', Contact::class);
+
+
+// LIVEWIRE WITH DATABASE
+Route::get('users', User::class);
