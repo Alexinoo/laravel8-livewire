@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\Action;
 use App\Http\Livewire\Form;
 use App\Http\Livewire\Home;
 use App\Http\Livewire\Post;
@@ -34,3 +35,7 @@ Route::get('home/{name}', Home::class);
 
 // PROPERTY BINDING
 Route::get('form', Form::class);
+
+
+//  ACTION BINDING
+Route::get('action', Action::class);
