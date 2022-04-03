@@ -23,4 +23,9 @@ Route::get('/', function () {
 
 Route::get('post', Post::class);
 Route::get('user', User::class);
+
+// Pass parameters
 Route::get('home/{name}', Home::class);
+
+// Pass optional parameters
+// Route::get('home/{name?}', Home::class);
