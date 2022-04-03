@@ -4,6 +4,7 @@ use App\Http\Livewire\Action;
 use App\Http\Livewire\Form;
 use App\Http\Livewire\Home;
 use App\Http\Livewire\Post;
+use App\Http\Livewire\Product;
 use App\Http\Livewire\User;
 use Illuminate\Support\Facades\Route;
 
@@ -39,3 +40,7 @@ Route::get('form', Form::class);
 
 //  ACTION BINDING
 Route::get('action', Action::class);
+
+
+//  LIFECYCLE HOOK
+Route::get('product', Product::class);
