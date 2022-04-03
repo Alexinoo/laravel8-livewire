@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Livewire\Action;
+use App\Http\Livewire\Contact;
 use App\Http\Livewire\Form;
 use App\Http\Livewire\Home;
 use App\Http\Livewire\Post;
@@ -44,3 +45,7 @@ Route::get('action', Action::class);
 
 //  LIFECYCLE HOOK
 Route::get('product', Product::class);
+
+
+//  LIVEWIRE FORM VALIDATION
+Route::get('contact', Contact::class);
