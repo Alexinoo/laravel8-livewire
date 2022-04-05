@@ -15,5 +15,10 @@
     <script src="{{asset('assets/js/jquery-3.6.0.min.js')}}"></script>
     <script src="{{asset('assets/js/bootstrap.bundle.min.js')}}"></script>
     @livewireScripts
+    <script>
+        window.livewire.on('StudentAdded' , ()=>{
+            $('#studentModal').modal('hide')
+        });
+    </script>
 </body>
 </html>
