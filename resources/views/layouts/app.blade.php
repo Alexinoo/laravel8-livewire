@@ -16,11 +16,19 @@
     <script src="{{asset('assets/js/bootstrap.bundle.min.js')}}"></script>
     @livewireScripts
     <script>
+        //// Close addStudentModal
         window.livewire.on('StudentAdded' , ()=>{
             $('#addStudentModal').modal('hide')
         });
+        // Close updateStudentModal
         window.livewire.on('StudentUpdated' , ()=>{
             $('#updateStudentModal').modal('hide')
+        });
+
+        // RESET FORM
+        window.livewire.on('FileUploaded' , ()=>{
+            // reset the form
+            $('#file-upload')[0].reset()
         });
         
     </script>
