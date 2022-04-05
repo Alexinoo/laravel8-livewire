@@ -7,6 +7,7 @@ use App\Http\Livewire\Home;
 use App\Http\Livewire\Post;
 use App\Http\Livewire\Product;
 use App\Http\Livewire\Students;
+use App\Http\Livewire\Uploads;
 use App\Http\Livewire\User;
 use App\Http\Livewire\Users;
 use App\Models\Student;
@@ -59,3 +60,6 @@ Route::get('users', User::class);
 
 // LIVEWIRE WITH CRUD
 Route::get('students', Students::class);
+
+// LIVEWIRE WITH File Upload
+Route::get('uploads', Uploads::class);
