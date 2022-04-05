@@ -1,5 +1,6 @@
 <div>
     @include('livewire.Student.create')
+    @include('livewire.Student.update')
     <section>
      <div class="container">
          <div class="row">
@@ -11,7 +12,7 @@
                      <div class="card-header text-center">
                          <h4>All Students   
                              <button type="button" 
-                          data-bs-toggle="modal" data-bs-target="#studentModal"
+                          data-bs-toggle="modal" data-bs-target="#addStudentModal"
                               class="btn btn-primary float-end">Add</button>
                         </h4>                         
                        
@@ -25,6 +26,7 @@
                                      <th>Last Name</th>
                                      <th>Email</th>
                                      <th>Phone</th>
+                                     <th>Action</th>
                                  </tr>
                              </thead>
                              <tbody>
@@ -35,7 +37,13 @@
                                     <td>{{ $student->firstname}}</td>      
                                     <td>{{ $student->lastname}}</td>      
                                     <td>{{ $student->email}}</td>      
-                                    <td>{{ $student->phone}}</td>      
+                                    <td>{{ $student->phone}}</td>  
+                                    <td>
+                                        <button type="button" class="btn btn-info" data-bs-target="#updateStudentModal" data-bs-toggle="modal"  wire:click.prevent = "edit({{$student->id}})">Edit</button>
+                                    </td>    
+                                    <td>
+                                        <button type="button" class="btn btn-danger"  wire:click.prevent = "delete({{$student->id}})">Delete</button>
+                                    </td>    
                                 </tr>   
                                  @endforeach
                              </tbody>
