@@ -17,8 +17,12 @@
     @livewireScripts
     <script>
         window.livewire.on('StudentAdded' , ()=>{
-            $('#studentModal').modal('hide')
+            $('#addStudentModal').modal('hide')
         });
+        window.livewire.on('StudentUpdated' , ()=>{
+            $('#updateStudentModal').modal('hide')
+        });
+        
     </script>
 </body>
 </html>
