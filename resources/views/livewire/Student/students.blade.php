@@ -10,11 +10,19 @@
                  @endif
                  <div class="card mt-3">
                      <div class="card-header text-center">
-                         <h4>All Students   
-                             <button type="button" 
-                          data-bs-toggle="modal" data-bs-target="#addStudentModal"
-                              class="btn btn-primary float-end">Add</button>
-                        </h4>                         
+                         <div class="row">
+                             <div class="col-md-8">
+                                   <h4>All Students   
+                                    <button type="button" 
+                                data-bs-toggle="modal" data-bs-target="#addStudentModal"
+                                    class="btn btn-primary float-end">Add</button>
+                                </h4>
+                             </div>
+                             <div class="col-md-4">
+                                 <input type="text" name="" id="" class="form-control" placeholder="Search.." wire:model="searchTerm"/>
+                             </div>
+                         </div>
+                                               
                        
                      </div>
                      <div class="card-body">
