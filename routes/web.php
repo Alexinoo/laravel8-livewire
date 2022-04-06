@@ -4,6 +4,7 @@ use App\Http\Livewire\Action;
 use App\Http\Livewire\Contact;
 use App\Http\Livewire\Form;
 use App\Http\Livewire\Home;
+use App\Http\Livewire\Images;
 use App\Http\Livewire\Post;
 use App\Http\Livewire\Product;
 use App\Http\Livewire\Students;
@@ -63,3 +64,7 @@ Route::get('students', Students::class);
 
 // LIVEWIRE WITH File Upload
 Route::get('uploads', Uploads::class);
+
+
+// LIVEWIRE WITH MULTIPLE File Uploads
+Route::get('upload-images', Images::class);
