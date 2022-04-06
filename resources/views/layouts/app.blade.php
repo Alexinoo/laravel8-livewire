@@ -30,6 +30,12 @@
             // reset the form
             $('#file-upload')[0].reset()
         });
+
+        // RESET FORM - MULTIPLE FILE UPLOADS
+        window.livewire.on('imagesUploaded' , ()=>{
+            // reset the form
+            $('#upload-images')[0].reset()
+        });
         
     </script>
 </body>
